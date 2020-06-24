@@ -7,8 +7,7 @@ module.exports = {
   },
   env: {
     es6: true,
-    browser: true,
-    node: true
+    browser: true
   },
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -16,6 +15,7 @@ module.exports = {
     'prettier/@typescript-eslint'
   ],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   }
 }
